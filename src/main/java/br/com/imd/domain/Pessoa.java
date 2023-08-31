@@ -2,7 +2,7 @@ package br.com.imd.domain;
 
 import java.util.Objects;
 
-public class Pessoa extends AbstractEntity{
+public class Pessoa extends AbstractEntity {
 	/**
 	 * 
 	 */

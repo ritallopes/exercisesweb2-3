@@ -2,17 +2,10 @@ package br.com.imd.domain;
 
 import java.util.Objects;
 
-public class Papel {
+public class Papel extends AbstractEntity {
 
-	private int id;
 	private String descricao;
 	
-	public int getId() {
-		return id;
-	}
-	public void setId(int id) {
-		this.id = id;
-	}
 	public String getDescricao() {
 		return descricao;
 	}
@@ -21,7 +14,7 @@ public class Papel {
 	}
 	@Override
 	public int hashCode() {
-		return Objects.hash(descricao, id);
+		return Objects.hash(descricao, getId());
 	}
 	@Override
 	public boolean equals(Object obj) {
@@ -32,7 +25,7 @@ public class Papel {
 		if (getClass() != obj.getClass())
 			return false;
 		Papel other = (Papel) obj;
-		return Objects.equals(descricao, other.descricao) && id == other.id;
+		return Objects.equals(descricao, other.descricao) && getId() == other.getId();
 	}
 	
 }
