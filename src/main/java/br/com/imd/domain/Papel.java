@@ -4,7 +4,6 @@ import java.util.Objects;
 
 public class Papel {
 
-	
 	private int id;
 	private String descricao;
 	
