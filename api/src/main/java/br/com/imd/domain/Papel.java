@@ -3,7 +3,9 @@ package br.com.imd.domain;
 import java.util.Objects;
 
 public class Papel extends AbstractEntity {
-
+	
+	
+	private String titulo;
 	private String descricao;
 	
 	public String getDescricao() {
@@ -25,7 +27,13 @@ public class Papel extends AbstractEntity {
 		if (getClass() != obj.getClass())
 			return false;
 		Papel other = (Papel) obj;
-		return Objects.equals(descricao, other.descricao) && getId() == other.getId();
+		return Objects.equals(descricao, other.descricao) &&  Objects.equals(titulo, other.titulo) && getId() == other.getId();
+	}
+	public String getTitulo() {
+		return titulo;
+	}
+	public void setTitulo(String titulo) {
+		this.titulo = titulo;
 	}
 	
 }

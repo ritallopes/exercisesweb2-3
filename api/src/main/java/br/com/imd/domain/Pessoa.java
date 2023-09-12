@@ -7,6 +7,13 @@ public class Pessoa extends AbstractEntity {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
+	private String cpf;
+	public String getCpf() {
+		return cpf;
+	}
+	public void setCpf(String cpf) {
+		this.cpf = cpf;
+	}
 	private String name;
 	
 	public Pessoa() {
@@ -31,6 +38,6 @@ public class Pessoa extends AbstractEntity {
 		if (getClass() != obj.getClass())
 			return false;
 		Pessoa other = (Pessoa) obj;
-		return Objects.equals(name, other.name);
+		return Objects.equals(name, other.name) && Objects.equals(cpf, other.cpf);
 	} 
 }
