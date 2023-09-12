@@ -12,8 +12,8 @@
 	<artifactId>papeis</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
-	<name>papeis</name>
-	<description>Projeto 2</description>
+	<name>papeisweb2</name>
+	<description>Projeto de Web 2</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
