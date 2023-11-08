@@ -3,7 +3,7 @@ import Box from "@mui/material/Box";
 
 import { Tab, Tabs, Typography } from "@mui/material";
 
-import ListPapel from "./ListPapel";
+import ListPapel from "../ListPapel";
 
 interface TabPanelProps {
   children?: React.ReactNode;

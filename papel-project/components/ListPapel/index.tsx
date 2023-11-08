@@ -25,7 +25,7 @@ interface IPapel {
   descricao: string;
 }
 export default function ListPapel() {
-  const papeis = React.useState<IPapel[]>([]);
+  const papeis = React.useState<IPapel[]>();
   return (
     <>
       <Typography variant="h1" component="h2">
@@ -40,14 +40,15 @@ export default function ListPapel() {
             </TableRow>
           </TableHead>
           <TableBody>
-            {papeis.map((papel) => (
-              <MyTableRow key={`key=${papel}`}>
-                <TableCell component="th" scope="row">
-                  {papel}
-                </TableCell>
-                <TableCell align="right">{papel}</TableCell>
-              </MyTableRow>
-            ))}
+            {papeis.length &&
+              papeis.map((value) => (
+                <MyTableRow key={`key=${value.nome}`}>
+                  <TableCell component="th" scope="row">
+                    {value?.nome}
+                  </TableCell>
+                  <TableCell align="right">{value?.descricao}</TableCell>
+                </MyTableRow>
+              ))}
           </TableBody>
         </Table>
       </TableContainer>

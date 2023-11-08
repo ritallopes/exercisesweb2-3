@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>br.com.imd</groupId>
-	<artifactId>papeis</artifactId>
+	<artifactId>papeis-spa</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
-	<name>papeisweb2</name>
+	<name>papeisweb-spa</name>
 	<description>Projeto de Web 2</description>
 	<properties>
 		<java.version>17</java.version>
@@ -21,6 +21,16 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.auth0</groupId>
+			<artifactId>java-jwt</artifactId>
+			<version>4.0.0</version>
 		</dependency>
 
 		<dependency>
