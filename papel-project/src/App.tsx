@@ -14,10 +14,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Lists />} />
-          <Route
-            path="/login"
-            element={<Login setLoggedIn={setLoggedIn}  />}
-          />
+          <Route path="/login" element={<Login setLoggedIn={setLoggedIn} />} />
         </Routes>
       </BrowserRouter>
     </div>
